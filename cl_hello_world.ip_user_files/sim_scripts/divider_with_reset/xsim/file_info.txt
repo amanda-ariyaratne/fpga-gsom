@@ -1,0 +1,2 @@
+divider_with_reset.v,verilog,xil_defaultlib,../../../../cl_hello_world.gen/sources_1/ip/divider_with_reset/sim/divider_with_reset.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

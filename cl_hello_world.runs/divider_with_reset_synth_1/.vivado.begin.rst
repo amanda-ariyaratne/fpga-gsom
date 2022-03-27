@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="ec2-user" Host="ip-172-31-74-77.ec2.internal" Pid="2919" HostCore="8" HostMemory="65323628">
+    </Process>
+</ProcessHandle>

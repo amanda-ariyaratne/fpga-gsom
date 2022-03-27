@@ -1,0 +1,232 @@
+
+*** Running vivado
+    with args -log square_root_with_reset.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source square_root_with_reset.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/ec2-user/.Xilinx/Vivado/Vivado_init.tcl'
+*Modifying Vivado command: launch_runs (aws_proc_overrides.tcl)
+script dir /home/ec2-user/aws-fpga/hdk/common/shell_v04261818/hlx/build/scripts
+source square_root_with_reset.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ec2-user/aws-fpga/hdk/common/shell_v04261818/hlx/design'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top square_root_with_reset -part xcvu9p-flgb2104-2-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5067
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2962.863 ; gain = 226.656 ; free physical = 51809 ; free virtual = 66289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'square_root_with_reset' [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.gen/sources_1/ip/square_root_with_reset/synth/square_root_with_reset.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/opt/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'square_root_with_reset' (17#1) [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.gen/sources_1/ip/square_root_with_reset/synth/square_root_with_reset.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3068.801 ; gain = 332.594 ; free physical = 52668 ; free virtual = 67149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3086.613 ; gain = 350.406 ; free physical = 52666 ; free virtual = 67146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3086.613 ; gain = 350.406 ; free physical = 52666 ; free virtual = 67146
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3092.551 ; gain = 0.000 ; free physical = 52657 ; free virtual = 67137
+INFO: [Netlist 29-17] Analyzing 875 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.gen/sources_1/ip/square_root_with_reset/square_root_with_reset_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3270.238 ; gain = 0.000 ; free physical = 52544 ; free virtual = 67025
+Finished Parsing XDC File [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.gen/sources_1/ip/square_root_with_reset/square_root_with_reset_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/square_root_with_reset_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/square_root_with_reset_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3270.238 ; gain = 0.000 ; free physical = 52544 ; free virtual = 67025
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDE => FDRE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3270.238 ; gain = 0.000 ; free physical = 52543 ; free virtual = 67023
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3270.238 ; gain = 534.031 ; free physical = 52655 ; free virtual = 67136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flgb2104-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3270.238 ; gain = 534.031 ; free physical = 52655 ; free virtual = 67136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/square_root_with_reset_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3270.238 ; gain = 534.031 ; free physical = 52655 ; free virtual = 67136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3270.238 ; gain = 534.031 ; free physical = 52645 ; free virtual = 67127
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized77) to 'inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized77) to 'inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized77) to 'inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized77) to 'inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized77) to 'inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized77) to 'inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3270.238 ; gain = 534.031 ; free physical = 52630 ; free virtual = 67117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3443.754 ; gain = 707.547 ; free physical = 52190 ; free virtual = 66677
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3465.785 ; gain = 729.578 ; free physical = 52186 ; free virtual = 66673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52184 ; free virtual = 66671
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52184 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52184 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52184 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52184 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52183 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52183 ; free virtual = 66670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |    39|
+|2     |LUT2    |    56|
+|3     |LUT3    |   363|
+|4     |LUT4    |     7|
+|5     |LUT5    |     6|
+|6     |LUT6    |     8|
+|7     |MUXCY   |   424|
+|8     |SRL16E  |    21|
+|9     |SRLC32E |    11|
+|10    |XORCY   |   449|
+|11    |FDRE    |   938|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.801 ; gain = 745.594 ; free physical = 52183 ; free virtual = 66670
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 3481.801 ; gain = 561.969 ; free physical = 52209 ; free virtual = 66696
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3481.809 ; gain = 745.594 ; free physical = 52209 ; free virtual = 66696
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3481.809 ; gain = 0.000 ; free physical = 52297 ; free virtual = 66784
+INFO: [Netlist 29-17] Analyzing 873 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3587.012 ; gain = 0.000 ; free physical = 52198 ; free virtual = 66685
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  (CARRY4) => CARRY8: 68 instances
+
+Synth Design complete, checksum: fcd178bb
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:02 . Memory (MB): peak = 3587.012 ; gain = 1012.805 ; free physical = 52344 ; free virtual = 66831
+INFO: [Common 17-1381] The checkpoint '/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/square_root_with_reset_synth_1/square_root_with_reset.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP square_root_with_reset, cache-ID = f7cda6c253faf5cc
+INFO: [Coretcl 2-1174] Renamed 210 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/square_root_with_reset_synth_1/square_root_with_reset.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file square_root_with_reset_utilization_synth.rpt -pb square_root_with_reset_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 11:19:04 2022...

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../cl_hello_world.gen/sources_1/ip/square_root_with_reset/sim/square_root_with_reset.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

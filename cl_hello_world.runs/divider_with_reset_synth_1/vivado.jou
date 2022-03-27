@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Mar 27 11:12:20 2022
+# Process ID: 2998
+# Current directory: /home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/divider_with_reset_synth_1
+# Command line: vivado -log divider_with_reset.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source divider_with_reset.tcl
+# Log file: /home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/divider_with_reset_synth_1/divider_with_reset.vds
+# Journal file: /home/ec2-user/aws-fpga/hdk/cl/examples/cl_hello_world_hlx/example_projects/cl_hello_world.runs/divider_with_reset_synth_1/vivado.jou
+#-----------------------------------------------------------
+source divider_with_reset.tcl -notrace

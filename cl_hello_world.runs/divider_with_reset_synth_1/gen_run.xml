@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="divider_with_reset_synth_1" LaunchPart="xcvu9p-flgb2104-2-i" LaunchTime="1648379536">
+  <File Type="VDS-TIMING-PB" Name="divider_with_reset_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="divider_with_reset_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="divider_with_reset.dcp"/>
+  <File Type="REPORTS-TCL" Name="divider_with_reset_reports.tcl"/>
+  <File Type="PA-TCL" Name="divider_with_reset.tcl"/>
+  <File Type="RDS-RDS" Name="divider_with_reset.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="divider_with_reset_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="divider_with_reset_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="divider_with_reset_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/divider_with_reset">
+    <File Path="$PSRCDIR/sources_1/ip/divider_with_reset/divider_with_reset.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="divider_with_reset"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/divider_with_reset">
+    <File Path="$PSRCDIR/sources_1/ip/divider_with_reset/divider_with_reset.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="divider_with_reset"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
